@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 17px !important;
+}
+
+/* header */
+header {
+  nav.bgcolor {
+    background-color: white;
+    &.scrolled {
+      background-color: rgba(0, 51, 80, 0.89);
+      a {
+        color: white;
+      }
+    }
+    a.active {
+      color: $secondary;
+    }
+    a.nav-link {
+      text-transform: uppercase;
+      @include text("Poppins", 17px, 500);
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+/* section fil d'ariane */
+main > section {
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: #ea5151;
+    }
+  }
+  li.active {
+    // font-weight: 700;
+    @extend .fw-bold;
+  }
+  h2 {
+    @include text("Poppins", 36px, 700);
+  }
+  .ariane {
+    font-size: 12px;
+  }
+}
+
+/* bouton retour vers le haut */
+#btn-back-to-top {
+  background-color: $secondary;
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  height: 35px;
+  position: fixed;
+  opacity: 0.9;
+  width: 48px;
+  right: 75px;
+  z-index: 100000;
+}
+
+/* section carte equipe diginamic*/
+article > section {
+  h3 {
+    @include text("Poppins", 24px, 700);
+  }
+  .img-card {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* footer */
+footer {
+  color: white;
+  h3 {
+    color: $info;
+    text-transform: uppercase;
+    @include text("Poppins", 14px, 600);
+  }
+  a {
+    text-decoration: none;
+    color: $light;
+    @include text($fontfamily: "Roboto");
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.btn {
+  @include text("Poppins", 14px, 500);
+}
+
+.legal {
+  background-color: #011a2d;
+  @include text("Roboto", 12px, 400);
+  p a {
+    text-decoration: none;
+    color: $light;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+/* page calendrier*/
+
+/* tableau */
+table {
+  thead {
+    background-color: $primary;
+    @include text("Poppins", 16px, 700);
+  }
+  tbody {
+    @include text("Roboto", 16px, 400);
+  }
+}
+
+#catalogue {
+  background-color: $secondary;
+  border: $secondary;
+  text-transform: uppercase;
+  &:hover {
+    color: white;
+    background-color: $primary;
+  }
+}

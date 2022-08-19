@@ -1,0 +1,5 @@
+@mixin text($fontfamily: "Poppins", $fontsize: 17px, $fontweight: 500) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  font-weight: $fontweight;
+} ;

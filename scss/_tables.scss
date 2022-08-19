@@ -1,0 +1,7 @@
+// Create your own map
+$custom-spacers: (
+  tp-6: 100px,
+  tp-7: 150px,
+);
+// Merge the maps
+$spacers: map-merge($spacers, $custom-spacers);
